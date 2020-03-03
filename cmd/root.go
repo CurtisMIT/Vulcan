@@ -1,3 +1,5 @@
+package cmd
+
 /*
 Copyright © 2020 NAME HERE <EMAIL ADDRESS>
 
@@ -13,7 +15,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package cmd
 
 import (
 	"fmt"
@@ -30,16 +31,12 @@ var cfgFile string
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "vulcan",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "Vulcan is a hackathon boilerplate generator",
+	Long: `Vulcan is a fast and simple boilerplate generator built with love by CurtisMIT.
+Complete documentation is available at https://github.com/CurtisMIT/Vulcan`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
-	Run: func(cmd *cobra.Command, args []string) { fmt.Println("HELLO CLI") },
+	// Run: func(cmd *cobra.Command, args []string) { fmt.Println("HELLO CLI") },
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
