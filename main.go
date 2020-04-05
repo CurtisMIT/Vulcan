@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "vulcan/cmd"
+import "github.com/CurtisMIT/vulcan/cmd"
 
 func main() {
 	cmd.Execute()

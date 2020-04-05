@@ -36,6 +36,7 @@ var nodeCmd = &cobra.Command{
 
 		proj := &Project{
 			AbsolutePath: wd,
+			FileType:     "index.js",
 		}
 
 		err = proj.Create()
