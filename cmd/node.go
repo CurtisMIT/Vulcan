@@ -36,14 +36,14 @@ var nodeCmd = &cobra.Command{
 
 		proj := &Project{
 			AbsolutePath: wd,
-			FileType:     "index.js",
+			FileName:     "index.js",
 		}
 
 		err = proj.Create()
 		if err != nil {
 			er(err)
 		}
-		fmt.Println("node called")
+		fmt.Println("Node app created")
 	},
 }
 

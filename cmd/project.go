@@ -2,20 +2,23 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/CurtisMIT/vulcan/tpl"
 	"os"
 	"text/template"
+
+	"github.com/CurtisMIT/vulcan/tpl"
 )
 
 // Project struct for any boilerplate
 type Project struct {
 	AbsolutePath string
-	FileType     string
+	FileName     string
+	Tpl          string
+	Db           string
 }
 
 // Create creates a directory
 func (p *Project) Create() error {
-	projFile, err := os.Create(fmt.Sprintf("%s/%s", p.AbsolutePath, p.FileType))
+	projFile, err := os.Create(fmt.Sprintf("%s/%s", p.AbsolutePath, p.FileName))
 	if err != nil {
 		return err
 	}
